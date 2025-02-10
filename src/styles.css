@@ -3,6 +3,13 @@
     box-sizing: border-box;
 }
 
+/* Styling for reach call to action */
+.cta-order {
+    background-color: rgb(241, 213, 213);
+    padding: 10px 20px;
+    border: solid black 2px;
+}
+
 /* add styling for the navbar in <header> */
 nav {
     display: flex;
