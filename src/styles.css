@@ -17,6 +17,12 @@ nav div:first-child {
     font-size: 40px;
 }
 
+/* chaning the styles of each button in the navbar */
+nav button {
+    border: none;
+    background-color: inherit;
+}
+
 /* styling for the main content section */
 #content .hero-container {
     display: flex;
