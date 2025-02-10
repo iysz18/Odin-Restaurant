@@ -1,4 +1,7 @@
 /* ./src/styles.css - styling 'Odin Restaurant' */
+* {
+    box-sizing: border-box;
+}
 
 /* add styling for the navbar in <header> */
 nav {
@@ -6,5 +9,25 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
-    background: rgb(226, 226, 226);
+    background: #e2e2e2;
+}
+
+/* styling for the main content section */
+#content .hero-container {
+    display: flex;
+}
+
+.hero-container .left-side {
+    margin: 100px;
+    width: 500px;
+}
+
+/* styling for the hero header h1 */
+.hero-container .left-side h1 {
+    font-size: 48px;
+}
+
+/* and for the hero subheader h2 */
+.hero-container .left-side h2 {
+    font-size: 20px;
 }
