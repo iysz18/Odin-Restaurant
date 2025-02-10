@@ -30,6 +30,11 @@ nav button {
     background-color: inherit;
 }
 
+/* adding the padding of the cta-order btn */
+nav .cta-order {
+    margin-left: 20px
+}
+
 nav button:hover {
     color: #757575;
 }
