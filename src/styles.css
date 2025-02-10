@@ -1,0 +1,10 @@
+/* ./src/styles.css - styling 'Odin Restaurant' */
+
+/* add styling for the navbar in <header> */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    background: rgb(226, 226, 226);
+}
