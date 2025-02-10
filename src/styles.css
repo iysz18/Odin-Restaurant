@@ -9,7 +9,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-inline: 20px;
-    background: #e2e2e2;
+    background: #FFFFFF;
 }
 
 /* styling the logo in the navbar */
@@ -28,7 +28,7 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid red 2px;
+    background-color: #e2e2e2;
 }
 
 .hero-container .left-side {
