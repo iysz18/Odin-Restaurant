@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "system-ui";
+}
+
 /* Styling for reach call to action */
 .cta-order {
     background-color: rgb(241, 213, 213);
@@ -13,7 +17,7 @@
 /* add styling for the navbar in <header> */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 30px;
     background: #FFFFFF;
@@ -22,6 +26,7 @@ nav {
 /* styling the logo in the navbar */
 nav div:first-child {
     font-size: 40px;
+    margin-right: auto;
 }
 
 /* chaning the styles of each button in the navbar */
@@ -32,10 +37,10 @@ nav button {
 
 /* adding the padding of the cta-order btn */
 nav .cta-order {
-    margin-left: 20px
+    margin-left: auto;
 }
 
-nav button:hover {
+nav button:hover, .cta-order:hover {
     color: #757575;
 }
 
@@ -49,7 +54,7 @@ nav button:hover {
 
 .hero-container .left-side {
     margin: 100px;
-    width: 500px;
+    flex-wrap: nowrap;
 }
 
 .hero-container .left-side h1 {
