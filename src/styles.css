@@ -8,7 +8,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 20px;
+    padding: 20px 30px;
     background: #FFFFFF;
 }
 
@@ -21,6 +21,10 @@ nav div:first-child {
 nav button {
     border: none;
     background-color: inherit;
+}
+
+nav button:hover {
+    color: #757575;
 }
 
 /* styling for the main content section */
