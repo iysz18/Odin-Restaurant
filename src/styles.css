@@ -12,9 +12,17 @@ nav {
     background: #e2e2e2;
 }
 
+/* styling the logo in the navbar */
+nav div:first-child {
+    font-size: 40px;
+}
+
 /* styling for the main content section */
 #content .hero-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
 }
 
 .hero-container .left-side {
@@ -22,12 +30,10 @@ nav {
     width: 500px;
 }
 
-/* styling for the hero header h1 */
 .hero-container .left-side h1 {
-    font-size: 48px;
+    font-size: 60px;
 }
 
-/* and for the hero subheader h2 */
 .hero-container .left-side h2 {
     font-size: 20px;
 }
