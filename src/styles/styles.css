@@ -9,6 +9,13 @@
     --nav-cta-btn: 10px 20px;
     --nav-cta-color: black;
     --nav-cta-fs: 22px;
+
+    /* hero section */
+    --hero-h1-fs: 82px;
+    --hero-p-fs: 22px;
+    --hero-p-width: 600px;
+    --hero-h1-width: 1000px;
+    --hero-container-width: 1000px;
 }
 
 /* styling for e.g CTA and global elements */
@@ -65,4 +72,32 @@ nav .cta-btn {
     font-size: var(--nav-cta-fs);
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+/* Styling for the hero-section */
+#content {
+    margin-top: 150px;
+    height: 100%;
+}
+
+#content .hero-txt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: auto;
+    color: white;
+}
+
+#content .hero-txt-container h1 {
+    font-size: var(--hero-h1-fs);
+    width: var(--hero-h1-width);
+    margin: 0;
+    text-align: center;
+}
+
+#content .hero-txt-container p {
+    width: var(--hero-p-width);
+    font-size: var(--hero-p-fs);
+    text-align: center;
 }
