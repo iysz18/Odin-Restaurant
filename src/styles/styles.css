@@ -1,3 +1,26 @@
+/* root values  */
+:root {
+    /* font sizes */
+    --nav-logo-fs: 42px;
+    --nav-buttons-fs: 18px;
+}
+
 body {
-    background-color: rebeccapurple;
+    height: 100vh;
+    margin: 0 100px;
+    outline: 1px solid black;
+}
+
+/* Styling: Navbar and its child elements */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debugging for visualization of box */
+    outline: 1px solid red;
+}
+
+nav .logo {
+    font-size: var(--nav-logo-fs);
 }
