@@ -1,38 +1,37 @@
-/* root values  */
+/* Root values */
 :root {
-    /* font sizes */
+    /* Font sizes */
     --nav-logo-fs: 42px;
     --nav-buttons-fs: 18px;
-
-    /* navbar*/
-    --nav-padding-size: 20px 30px;
-    --nav-cta-btn: 10px 20px;
-    --nav-cta-color: black;
     --nav-cta-fs: 22px;
-
-    /* hero section */
     --hero-h1-fs: 82px;
     --hero-p-fs: 22px;
+
+    /* Spacing */
+    --nav-padding-size: 20px 30px;
+    --nav-cta-btn-padding: 10px 20px;
     --hero-p-width: 600px;
     --hero-h1-width: 1000px;
     --hero-container-width: 1000px;
+    --margin-top-content: 150px;
+    --border-radius: 20px;
+
+    /* Colors */
+    --nav-cta-color: black;
     --hero-cta-btn-color: white;
+    --body-bg-overlay: rgba(0, 0, 0, 0.578);
+    --nav-bg-color: rgba(0, 0, 0, 0.428);
+    --box-shadow-color: white;
 }
 
-/* styling for e.g CTA and global elements */
-
+/* Global styles */
 body {
     height: 100vh;
-    background-image: url("../assets/vivaldi-bg.jpg");
-    background-size: cover; /* Ensures the image covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents repeating */
-    background-attachment: fixed; /* Optional: keeps the image fixed while scrolling */
+    background: url("../assets/vivaldi-bg.jpg") center/cover no-repeat fixed;
     overflow: hidden;
-
-    /* global font */
+    margin: 0;
+    padding: 0;
 }
-
 
 body::before {
     content: "";
@@ -41,26 +40,27 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.578); /* Adjust the opacity (0.5 = 50% darker) */
-    z-index: -1; /* Keeps it behind the content */
+    background-color: var(--body-bg-overlay);
+    z-index: -1;
 }
 
-/* Styling: Navbar and its child elements */
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--nav-padding-size);
-    background-color: rgba(0, 0, 0, 0.428); /* Adjust the opacity (0.5 = 50% darker) */
-    backdrop-filter: blur(10px); /* Adjust blur intensity */
-    z-index: -1; /* Keeps it behind the content */
+    background-color: var(--nav-bg-color);
+    backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 nav .logo {
     font-size: var(--nav-logo-fs);
 }
 
-nav button, nav .logo {
+nav button,
+nav .logo {
     color: white;
     background: none;
     border: none;
@@ -68,24 +68,24 @@ nav button, nav .logo {
 
 nav .cta-btn {
     background: white;
-    padding: var(--nav-cta-btn);
+    padding: var(--nav-cta-btn-padding);
     color: var(--nav-cta-color);
     font-size: var(--nav-cta-fs);
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px var(--box-shadow-color);
 }
 
-/* Styling for the hero-section */
+/* Hero section */
 #content {
-    margin-top: 150px;
+    margin-top: var(--margin-top-content);
     height: 100%;
 }
 
 #content .hero-txt-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
     width: auto;
     color: white;
 }
@@ -104,11 +104,11 @@ nav .cta-btn {
 }
 
 #content .hero-txt-container .cta-btn {
-    background: rgb(0, 0, 0);
-    padding: var(--nav-cta-btn);
+    background: black;
+    padding: var(--nav-cta-btn-padding);
     color: var(--hero-cta-btn-color);
     font-size: var(--nav-cta-fs);
     border: none;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 20px var(--box-shadow-color);
 }
