@@ -16,6 +16,7 @@
     --hero-p-width: 600px;
     --hero-h1-width: 1000px;
     --hero-container-width: 1000px;
+    --hero-cta-btn-color: white;
 }
 
 /* styling for e.g CTA and global elements */
@@ -27,9 +28,9 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents repeating */
     background-attachment: fixed; /* Optional: keeps the image fixed while scrolling */
+    overflow: hidden;
 
     /* global font */
-    font-family: Montserrat; 
 }
 
 
@@ -100,4 +101,14 @@ nav .cta-btn {
     width: var(--hero-p-width);
     font-size: var(--hero-p-fs);
     text-align: center;
+}
+
+#content .hero-txt-container .cta-btn {
+    background: rgb(0, 0, 0);
+    padding: var(--nav-cta-btn);
+    color: var(--hero-cta-btn-color);
+    font-size: var(--nav-cta-fs);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
