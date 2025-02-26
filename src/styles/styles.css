@@ -7,7 +7,6 @@
 
 body {
     height: 100vh;
-    margin: 0 100px;
     background-image: url("../assets/vivaldi-bg.jpg");
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-position: center; /* Centers the image */
@@ -15,12 +14,28 @@ body {
     background-attachment: fixed; /* Optional: keeps the image fixed while scrolling */
 }
 
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5 = 50% darker) */
+    backdrop-filter: blur(2.5px); /* Adjust blur intensity */
+    z-index: -1; /* Keeps it behind the content */
+}
+
 /* Styling: Navbar and its child elements */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.618); /* Adjust the opacity (0.5 = 50% darker) */
+    backdrop-filter: blur(10px); /* Adjust blur intensity */
+    z-index: -1; /* Keeps it behind the content */
 }
 
 nav .logo {
