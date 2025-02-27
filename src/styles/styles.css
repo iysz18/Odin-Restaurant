@@ -1,3 +1,18 @@
+/* Font face */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Font/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Font/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 /* Root values */
 :root {
     /* Font sizes */
@@ -7,11 +22,15 @@
     --hero-h1-fs: 82px;
     --hero-p-fs: 22px;
 
+    /* Font weights / types */
+    --logo-fs-weight: 600;
+    --cta-btn-fs-weight: 700;
+
     /* Spacing */
     --nav-padding-size: 20px 30px;
-    --nav-cta-btn-padding: 10px 20px;
+    --cta-btn-padding: 10px 20px;
     --hero-p-width: 600px;
-    --hero-h1-width: 1000px;
+    --hero-h1-width: 1200px;
     --hero-container-width: 1000px;
     --margin-top-content: 150px;
     --border-radius: 20px;
@@ -31,6 +50,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    font-family: Montserrat;
 }
 
 body::before {
@@ -43,6 +63,8 @@ body::before {
     background-color: var(--body-bg-overlay);
     z-index: -1;
 }
+
+/* END: CSS STYLING FOR THE HERO SECTION (HOME) */
 
 /* Navbar */
 nav {
@@ -57,6 +79,7 @@ nav {
 
 nav .logo {
     font-size: var(--nav-logo-fs);
+    font-weight: var(--logo-fs-weight);
 }
 
 nav button,
@@ -66,9 +89,11 @@ nav .logo {
     border: none;
 }
 
+.cta-btn { font-weight: var(--cta-btn-fs-weight); }
+
 nav .cta-btn {
     background: white;
-    padding: var(--nav-cta-btn-padding);
+    padding: var(--cta-btn-padding);
     color: var(--nav-cta-color);
     font-size: var(--nav-cta-fs);
     border-radius: var(--border-radius);
@@ -77,6 +102,9 @@ nav .cta-btn {
 
 /* Hero section */
 #content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
     margin-top: var(--margin-top-content);
     height: 100%;
 }
@@ -86,7 +114,7 @@ nav .cta-btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: max-content;
     color: white;
 }
 
@@ -105,10 +133,13 @@ nav .cta-btn {
 
 #content .hero-txt-container .cta-btn {
     background: black;
-    padding: var(--nav-cta-btn-padding);
+    padding: var(--cta-btn-padding);
     color: var(--hero-cta-btn-color);
     font-size: var(--nav-cta-fs);
     border: none;
     border-radius: var(--border-radius);
     box-shadow: 0 0 20px var(--box-shadow-color);
 }
+
+/* END: CSS STYLING FOR THE HERO SECTION (HOME) */
+
