@@ -89,6 +89,10 @@ nav .logo {
     border: none;
 }
 
+nav .nav-btns > button:hover {
+    color: rgb(138, 138, 138);
+}
+
 .cta-btn { font-weight: var(--cta-btn-fs-weight); }
 
 nav .cta-btn {
@@ -143,3 +147,4 @@ nav .cta-btn {
 
 /* END: CSS STYLING FOR THE HERO SECTION (HOME) */
 
+ 
